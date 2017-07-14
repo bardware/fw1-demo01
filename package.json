@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassb3": "node-sass --output-style expanded --precision 6 dev/sass/bootstrap.scss web/assets/vendor/bootstrap/css/bootstrap.expanded.css",
+    "sassb3t": "node-sass --output-style expanded --precision 6 dev/sass/bootstrap-theme.scss web/assets/vendor/bootstrap/css/bootstrap-theme.expanded.css",
+    "sassb3_autoprefixer_replace": "postcss -u autoprefixer -r web/assets/vendor/bootstrap/css/*",
+    "sassb3_autoprefixer": "postcss web/assets/vendor/bootstrap/css/bootstrap.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap/css/bootstrap.prefixed.css --no-map",
+    "sassb3t_autoprefixer": "postcss web/assets/vendor/bootstrap/css/bootstrap-theme.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css --no-map",
+    "sassb3_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap.css web/assets/vendor/bootstrap/css/bootstrap.prefixed.css",
+    "sassb3t_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap-theme.css web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css"
   },
   "repository": {
     "type": "git",
