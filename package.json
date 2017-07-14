@@ -10,7 +10,8 @@
     "sassb3_autoprefixer": "postcss web/assets/vendor/bootstrap/css/bootstrap.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap/css/bootstrap.prefixed.css --no-map",
     "sassb3t_autoprefixer": "postcss web/assets/vendor/bootstrap/css/bootstrap-theme.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css --no-map",
     "sassb3_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap.css web/assets/vendor/bootstrap/css/bootstrap.prefixed.css",
-    "sassb3t_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap-theme.css web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css"
+    "sassb3t_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap-theme.css web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css",
+    "prettysass": "prettier --write --print-width 120 --tab-width 4 --use-tabs --single-quote dev/sass/**/*.scss"
   },
   "repository": {
     "type": "git",
