@@ -5,52 +5,52 @@
  */
 
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/variables";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies
-@import "bootstrap/normalize";
-@import "bootstrap/print";
-@import "bootstrap/glyphicons";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/normalize";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/print";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/scaffolding";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/type";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/code";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/grid";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/tables";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/forms";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/buttons";
 
 // Components
-@import "bootstrap/component-animations";
-@import "bootstrap/dropdowns";
-@import "bootstrap/button-groups";
-@import "bootstrap/input-groups";
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
-@import "bootstrap/pagination";
-@import "bootstrap/pager";
-@import "bootstrap/labels";
-@import "bootstrap/badges";
-@import "bootstrap/jumbotron";
-@import "bootstrap/thumbnails";
-@import "bootstrap/alerts";
-@import "bootstrap/progress-bars";
-@import "bootstrap/media";
-@import "bootstrap/list-group";
-@import "bootstrap/panels";
-@import "bootstrap/responsive-embed";
-@import "bootstrap/wells";
-@import "bootstrap/close";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/component-animations";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/dropdowns";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/button-groups";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/input-groups";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/navs";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/navbar";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/pagination";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/pager";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/labels";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/badges";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/jumbotron";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/thumbnails";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/alerts";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/progress-bars";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/media";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/list-group";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/panels";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/responsive-embed";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/wells";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/close";
 
 // Components w/ JavaScript
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
-@import "bootstrap/popovers";
-@import "bootstrap/carousel";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/modals";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/tooltip";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/popovers";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/utilities";
+@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/responsive-utilities";
