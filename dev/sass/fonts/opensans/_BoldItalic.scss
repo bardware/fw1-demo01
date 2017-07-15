@@ -1,0 +1,14 @@
+/* BEGIN Bold Italic */
+@font-face {
+	font-family: 'OpenSans';
+	@include fontdef-woff($font-path, "OpenSans", $OpenSansVersion, "BoldItalic");
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'OpenSans';
+	@include fontdef-woff($font-path, "OpenSans", $OpenSansVersion, "BoldItalic");
+	font-weight: bold;
+	font-style: italic;
+}
+/* END Bold Italic */
