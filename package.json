@@ -5,12 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sassb3": "node-sass --output-style expanded --precision 6 dev/sass/bootstrap.scss web/assets/vendor/bootstrap/css/bootstrap.expanded.css",
-    "sassb3t": "node-sass --output-style expanded --precision 6 dev/sass/bootstrap-theme.scss web/assets/vendor/bootstrap/css/bootstrap-theme.expanded.css",
-    "sassb3_autoprefixer": "postcss web/assets/vendor/bootstrap/css/bootstrap.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap/css/bootstrap.prefixed.css --no-map",
-    "sassb3t_autoprefixer": "postcss web/assets/vendor/bootstrap/css/bootstrap-theme.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css --no-map",
-    "sassb3_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap.css web/assets/vendor/bootstrap/css/bootstrap.prefixed.css",
-    "sassb3t_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap/css/bootstrap-theme.css web/assets/vendor/bootstrap/css/bootstrap-theme.prefixed.css",
+    "sassb3": "node-sass --output-style expanded --precision 6 dev/sass/bootstrap.scss web/assets/vendor/bootstrap3/css/bootstrap.expanded.css",
+    "sassb3t": "node-sass --output-style expanded --precision 6 dev/sass/bootstrap-theme.scss web/assets/vendor/bootstrap3/css/bootstrap-theme.expanded.css",
+    "sassb3_autoprefixer": "postcss web/assets/vendor/bootstrap3/css/bootstrap.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap3/css/bootstrap.prefixed.css --no-map",
+    "sassb3t_autoprefixer": "postcss web/assets/vendor/bootstrap3/css/bootstrap-theme.expanded.css -u autoprefixer -o web/assets/vendor/bootstrap3/css/bootstrap-theme.prefixed.css --no-map",
+    "sassb3_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap3/css/bootstrap.css web/assets/vendor/bootstrap3/css/bootstrap.prefixed.css",
+    "sassb3t_minify": "cleancss --level 1 --output web/assets/vendor/bootstrap3/css/bootstrap-theme.css web/assets/vendor/bootstrap3/css/bootstrap-theme.prefixed.css",
+    "sass": "node-sass --output-style expanded --precision 6 dev/sass/fw1-demo01.scss web/assets/css/fw1-demo01.expanded.css",
+    "sass_autoprefixer": "postcss web/assets/css/fw1-demo01.expanded.css -u autoprefixer -o web/assets/css/fw1-demo01.prefixed.css --no-map",
+    "sass_minify": "cleancss --level 1 --output web/assets/css/fw1-demo01.css web/assets/css/fw1-demo01.prefixed.css",
+    "sassfa": "node-sass --output-style expanded --precision 6 dev/sass/fontawesome.scss web/assets/vendor/fontawesome/css/fontawesome.expanded.css",
+    "sassfa_autoprefixer": "postcss web/assets/vendor/fontawesome/css/fontawesome.expanded.css -u autoprefixer -o web/assets/vendor/fontawesome/css/fontawesome.prefixed.css --no-map",
+    "sassfa_minify": "cleancss --level 1 --output web/assets/vendor/fontawesome/css/fontawesome.css web/assets/vendor/fontawesome/css/fontawesome.prefixed.css",
     "prettysass": "prettier --write --print-width 120 --tab-width 4 --use-tabs --single-quote dev/sass/**/*.scss"
   },
   "repository": {
@@ -27,10 +33,13 @@
     "autoprefixer": "^7.1.2",
     "clean-css-cli": "^4.1.6",
     "eslint": "^4.2.0",
+    "glob": "^7.1.2",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.0",
     "prettier": "^1.5.2",
-    "prettier-eslint-cli": "^4.1.1"
+    "prettier-eslint-cli": "^4.1.1",
+    "shelljs": "^0.7.8",
+    "shelljs-nodecli": "^0.1.1"
   },
   "browserslist": [
     "Chrome >= 35",

@@ -1,3 +1,5 @@
+@import "bootstrap-override";
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -11,7 +13,7 @@
 // Reset and dependencies
 @import "../vendor/bootstrap3/assets/stylesheets/bootstrap/normalize";
 @import "../vendor/bootstrap3/assets/stylesheets/bootstrap/print";
-@import "../vendor/bootstrap3/assets/stylesheets/bootstrap/glyphicons";
+// @import "../vendor/bootstrap3/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
 @import "../vendor/bootstrap3/assets/stylesheets/bootstrap/scaffolding";

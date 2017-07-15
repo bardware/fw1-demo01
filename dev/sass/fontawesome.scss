@@ -1,13 +1,5 @@
 $fa-font-path: "/assets/vendor/fontawesome/fonts";
 
-@font-face {
-	font-family: 'FontAwesome';
-	src: url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
-		url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -16,6 +8,15 @@ $fa-font-path: "/assets/vendor/fontawesome/fonts";
 @import "../vendor/fontawesome/scss/variables";
 @import "../vendor/fontawesome/scss/mixins";
 // @import "../vendor/fontawesome/scss/path";
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+		url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @import "../vendor/fontawesome/scss/core";
 @import "../vendor/fontawesome/scss/larger";
 @import "../vendor/fontawesome/scss/fixed-width";
