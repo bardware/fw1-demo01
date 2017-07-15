@@ -17,7 +17,10 @@
     "sassfa": "node-sass --output-style expanded --precision 6 dev/sass/fontawesome.scss web/assets/vendor/fontawesome/css/fontawesome.expanded.css",
     "sassfa_autoprefixer": "postcss web/assets/vendor/fontawesome/css/fontawesome.expanded.css -u autoprefixer -o web/assets/vendor/fontawesome/css/fontawesome.prefixed.css --no-map",
     "sassfa_minify": "cleancss --level 1 --output web/assets/vendor/fontawesome/css/fontawesome.css web/assets/vendor/fontawesome/css/fontawesome.prefixed.css",
-    "prettysass": "prettier --write --print-width 120 --tab-width 4 --use-tabs --single-quote dev/sass/**/*.scss"
+    "prettysass": "prettier --write --print-width 120 --tab-width 4 --use-tabs --single-quote dev/sass/**/*.scss",
+    "b3_compressjs": "uglifyjs dev/vendor/bootstrap3/assets/javascripts/bootstrap.js --compress --output web/assets/vendor/bootstrap3/js/bootstrap.min.js --comments /^!/",
+    "fonts_opensans": "node Makefile.js OpenSans2woff",
+    "fonts_fa": "node Makefile.js FA2woff"
   },
   "repository": {
     "type": "git",
@@ -39,7 +42,8 @@
     "prettier": "^1.5.2",
     "prettier-eslint-cli": "^4.1.1",
     "shelljs": "^0.7.8",
-    "shelljs-nodecli": "^0.1.1"
+    "shelljs-nodecli": "^0.1.1",
+    "uglify-js": "^3.0.24"
   },
   "browserslist": [
     "Chrome >= 35",

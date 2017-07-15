@@ -80,3 +80,34 @@ target.OpenSans2woff = function() {
 		}
 	} );
 };
+
+target.FA2woff = function() {
+	var strFolderIn = 'dev/vendor/fontawesome/fonts',
+		strFolderOut = 'web/assets/fonts/fontawesome';
+
+	fs.readdir( strFolderIn, function( err, fonts ) {
+		var woffs = [];
+
+		if( err ) {
+			throw err;
+		}
+		fonts.forEach( function( font ) {
+			if( font.indexOf( '.woff' ) > -1 ) {
+				woffs.push( font );
+				console.log( 'Found   ' + strFolderIn + '/' + font );
+			}
+		} );
+		if( woffs.length ) {
+			woffs.forEach( function( font ) {
+				var strFontFile = strFolderIn + '/' + font,
+					fontName = font.split( '.' )[ 0 ];
+
+				mkdir( '-p', strFolderOut );
+				cp( '-f', strFontFile, strFolderOut + '/' );
+				cp( '-f', strFontFile, strFolderOut + '/' );
+			} );
+		} else {
+			console.error( color( 'red', 'No TrueType fonts found in ' + strFolderIn ) );
+		}
+	} );
+};
