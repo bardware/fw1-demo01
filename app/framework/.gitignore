@@ -3,4 +3,5 @@
 # Except this file
 !.gitignore
 !README.md
+!LICENSE
 !.cfc
